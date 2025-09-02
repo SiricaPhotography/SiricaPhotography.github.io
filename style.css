@@ -4,4 +4,6 @@ body {
   background: linear-gradient(135deg, #e9f1f7, #c8d8e6, #a7c4dd);
   background-attachment: fixed; /* smooth effect when scrolling */
   color: #222; /* adjust to your design */
+  font-family: 'Helvetica', sans-serif; 
+  color: #222222; 
 }
