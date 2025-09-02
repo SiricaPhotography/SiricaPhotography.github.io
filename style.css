@@ -16,3 +16,8 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #222222;
 }
+
+a:vistied {
+  text-decoration: line-through;
+  color: rgba(#222222,#222222,#222222,.5);
+}
