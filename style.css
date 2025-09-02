@@ -1,3 +1,7 @@
 body {
-  background-color: #c8d8e6;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e9f1f7, #c8d8e6, #a7c4dd);
+  background-attachment: fixed; /* smooth effect when scrolling */
+  color: #222; /* adjust to your design */
 }
