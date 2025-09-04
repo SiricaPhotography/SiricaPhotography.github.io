@@ -7,6 +7,11 @@ body {
   color: #222; /* adjust to your design */
   font-family: "Tinos", sans-serif; 
   color: #222222; 
+  display: flex;
+  flex-wrap: wrap; /* allows responsive stacking */
+  gap: 20px;       /* space between columns */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,6 +38,31 @@ a:vistied {
 }
 
 .btn-instagram:hover {
-  background-color: #4f7a6a;   /* darker on hover */
+  background-color:  /* darker on hover */
+}
+
+section {
+  flex: 3;              /* grow more */
+  min-width: 60%;       /* ensures it doesn’t shrink too small */
+}
+
+/* Aside takes up 1/4 width */
+aside {
+  flex: 1;              /* grow less */
+  min-width: 200px;     /* ensures sidebar has space */
+  background:;  /* subtle background */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* stack vertically */
+  }
+
+  section, aside {
+    min-width: 100%; /* take full width */
+  }
 }
 
