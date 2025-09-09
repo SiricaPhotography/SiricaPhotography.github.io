@@ -75,8 +75,6 @@ aside {
     min-width: 100%; /* take full width */
   }
 }
-/* your existing styles above ... */
-
 /* Image Grid Section */
 .image-grid {
   display: grid;
@@ -84,7 +82,6 @@ aside {
   gap: 15px;   /* spacing between images */
   margin: 20px 0; /* space above and below */
 }
-
 .image-grid img {
   width: 100%;
   height: auto;
