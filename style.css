@@ -28,17 +28,26 @@ a:visited {
 }
 .btn-instagram {
   display: inline-block;
-  padding: 0.7rem 1.2rem;
-  background-color: #6a9c89;   /* Sage Green accent */
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background 0.3s ease;
+  width: 50px;  
+  height: 50px;
+  border-radius: 50%;  
+  background: radial-gradient(circle at 30% 107%, 
+    #fdf497 0%, #fdf497 5%, 
+    #fd5949 45%, 
+    #d6249f 60%, 
+    #285AEB 90%);
+  transition: transform 0.3s ease;
+  
+  /* Instagram logo */
+  background-image: 
+    url('https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%; /* size of the logo inside */
 }
 
 .btn-instagram:hover {
-  background-color:  /* darker on hover */
+  transform: scale(1.1);  /* playful zoom on hover */
 }
 
 section {
