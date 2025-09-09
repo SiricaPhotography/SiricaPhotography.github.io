@@ -53,7 +53,7 @@ a:visited {
 section {
   flex: 3;              /* grow more */
   min-width: 60%;       /* ensures it doesn’t shrink too small */
-  background: white;
+  background:
 }
 
 /* Aside takes up 1/4 width */
