@@ -75,4 +75,20 @@ aside {
     min-width: 100%; /* take full width */
   }
 }
+/* your existing styles above ... */
+
+/* Image Grid Section */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 15px;   /* spacing between images */
+  margin: 20px 0; /* space above and below */
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
