@@ -55,7 +55,37 @@ section {
   min-width: 60%;       /* ensures it doesn’t shrink too small */
   background:
 }
+.navbar {
+  width: 100%;
+  background-color: #6a9c89; /* Sage green accent */
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 0 0 8px 8px; /* soft rounded bottom corners */
+}
 
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* centers tabs */
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;
 /* Aside takes up 1/4 width */
 aside {
   flex: 1;              /* grow less */
