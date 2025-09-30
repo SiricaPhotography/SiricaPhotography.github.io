@@ -14,7 +14,7 @@ body {
 
 /* Header */
 .header {
-  background: #dfe8ef;
+  background: #37404F;
   padding: 1rem 2rem;
   text-align: center;
 }
@@ -86,7 +86,7 @@ body {
 
 /* Footer */
 .footer {
-  background: #4a4f58;
+  background: #37404F;
   color: white;
   display: flex;
   justify-content: space-between;
