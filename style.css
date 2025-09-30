@@ -1,121 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-body {
+/* General Reset */
+* {
   margin: 0;
-  background: linear-gradient(135deg, #e9f1f7, #c8d8e6, #a7c4dd);
-  background-attachment: fixed; /* smooth effect when scrolling */
-  color: #222; /* adjust to your design */
-  font-family: "Tinos", sans-serif; 
-  color: #222222; 
-  display: flex;
-  flex-wrap: wrap; /* allows responsive stacking */
-  gap: 20px;       /* space between columns */
-  padding: 20px;
+  padding: 0;
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Lavishly Yours", sans-serif;
+body {
+  font-family: "Georgia", serif;
+  background-color: #dfe8ef;
+  color: #333;
+  text-align: center;
 }
 
-a {
-  color: #222222;
+/* Header */
+.header {
+  background: #dfe8ef;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
-a:visited {
-  text-decoration: line-through;
-  color: rgba(#222222,#222222,#222222,.5);
-}
-.btn-instagram {
-  display: inline-block;
-  width: 50px;  
-  height: 50px;
-  border-radius: 50%;  
-  background: radial-gradient(circle at 30% 107%, 
-    #fdf497 0%, #fdf497 5%, 
-    #fd5949 45%, 
-    #d6249f 60%, 
-    #285AEB 90%);
-  transition: transform 0.3s ease;
-  
-  /* Instagram logo */
-  background-image: 
-    url('https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 55%; /* size of the logo inside */
-}
-
-.btn-instagram:hover {
-  transform: scale(1.1);  /* playful zoom on hover */
-}
-
-section {
-  flex: 3;              /* grow more */
-  min-width: 60%;       /* ensures it doesn’t shrink too small */
-  background:
-}
-.navbar {
-  width: 100%;
-  background-color: #6a9c89; /* Sage green accent */
-  padding: 10px 0;
-  margin-bottom: 20px;
-  border-radius: 0 0 8px 8px; /* soft rounded bottom corners */
+.logo {
+  font-family: "Brush Script MT", cursive;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: center; /* centers tabs */
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  background: #4a4f58;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
 }
 
 .navbar li {
-  display: inline;
+  margin: 0 1rem;
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
-.navbar a:hover {
-  color: #f0f0f0;
-/* Aside takes up 1/4 width */
-aside {
-  flex: 1;              /* grow less */
-  min-width: 200px;     /* ensures sidebar has space */
-  background:;  /* subtle background */
-  padding: 15px;
-  border-radius: 8px;
+/* Welcome Section */
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
 }
 
-/* Responsive: stack on small screens */
-@media (max-width: 768px) {
-  body {
-    flex-direction: column; /* stack vertically */
-  }
+.image-box {
+  flex: 1;
+  min-width: 250px;
+}
 
-  section, aside {
-    min-width: 100%; /* take full width */
-  }
-}
-/* Image Grid Section */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  gap: 15px;   /* spacing between images */
-  margin: 20px 0; /* space above and below */
-}
-.image-grid img {
+.image-box img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+  max-width: 300px;
+  border: 8px solid gold;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
+.text-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.text-box h2 {
+  font-size: 2.5rem;
+  font-family: "Brush Script MT", cursive;
+  margin-bottom: 1rem;
+}
+
+.text-box .quote {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  background: #4a4f58;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  flex: 1;
+}
+
+.social-box {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.social-box img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Image Frame Effect */
+.image-box img {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px; /* space inside the frame */
+  background: #fff; /* "mat" background like real frames */
+  border: 12px solid transparent;
+  border-image: linear-gradient(45deg, #d4af37, #b8860b, #ffd700, #daa520);
+  border-image-slice: 1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3), 
+              inset 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
