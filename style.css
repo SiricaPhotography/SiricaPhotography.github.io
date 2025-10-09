@@ -1,3 +1,28 @@
+.photo-frame {
+  position: relative;
+  display: inline-block;
+  width: 400px; /* adjust as needed */
+  height: 500px;
+}
+
+.frame-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* lets clicks pass through */
+}
+
+.photo {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 5px;
+}
 /* General Reset */
 * {
   margin: 0;
