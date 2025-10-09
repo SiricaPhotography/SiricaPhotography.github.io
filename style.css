@@ -1,4 +1,4 @@
-/* General Reset */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,47 +6,49 @@
 }
 
 body {
-  font-family: "Georgia", serif;
+  font-family: Georgia, serif;
   background-color: #dfe8ef;
   color: #333;
-  text-align: center;
+  line-height: 1.5;
 }
 
-/* Header */
+/* HEADER */
 .header {
-  background: #dfe8ef;
-  padding: 1rem 2rem;
   text-align: center;
+  padding: 1rem;
 }
 
-.logo {
-  font-family: "Brush Script MT", cursive;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.logo-box img {
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  gap: 2rem;
   background: #4a4f58;
-  border-radius: 50px;
-  padding: 0.5rem 1rem;
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-}
-
-.navbar li {
-  margin: 0 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 40px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
 }
 
 .navbar a {
   text-decoration: none;
-  color: white;
-  font-size: 1rem;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.2s;
 }
 
-/* Welcome Section */
-.welcome {
+.navbar a:hover {
+  color: #ffd700;
+}
+
+/* WELCOME SECTION */
+.welcome-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,19 +59,33 @@ body {
 
 .image-box {
   flex: 1;
+  text-align: center;
   min-width: 250px;
 }
 
-.image-box img {
+/* Ornate Gold Frame */
+.frame {
   width: 100%;
   max-width: 300px;
-  border: 8px solid gold;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  padding: 12px;
+  background: #fff;
+  border: 18px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    #b8860b, #d4af37 25%, #ffd700 50%, #d4af37 75%, #b8860b
+  );
+  border-image-slice: 1;
+  box-shadow:
+    0 6px 12px rgba(0,0,0,0.4),
+    inset 3px 3px 6px rgba(255,255,255,0.6),
+    inset -3px -3px 6px rgba(0,0,0,0.4);
+  border-radius: 6px;
 }
 
 .text-box {
   flex: 1;
   min-width: 250px;
+  text-align: center;
 }
 
 .text-box h2 {
@@ -79,18 +95,20 @@ body {
 }
 
 .text-box .quote {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.3rem;
   font-style: italic;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
   background: #4a4f58;
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  align-items: center;
+  padding: 1.5rem 2rem;
   flex-wrap: wrap;
 }
 
@@ -106,6 +124,27 @@ body {
 }
 
 .social-box img {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+.social-box img:hover {
+  transform: scale(1.1);
+}
+.instagram-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.instagram-link:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.instagram-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
 }
