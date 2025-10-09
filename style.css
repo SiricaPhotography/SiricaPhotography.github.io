@@ -137,39 +137,11 @@ body {
   width: 35px;
   height: 35px;
 }
-
-/* Image Frame Effect */
-.image-box img {
-  width: 100%;
-  max-width: 300px;
-  padding: 10px; /* space inside the frame */
-  background: #fff; /* "mat" background like real frames */
-  border: 12px solid transparent;
-  border-image: linear-gradient(45deg, #d4af37, #b8860b, #ffd700, #daa520);
-  border-image-slice: 1;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3), 
-              inset 0 0 8px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
 .image-box img {
   width: 100%;
   max-width: 300px;
   padding: 12px; /* space inside the frame */
   background: #fff; /* matte backing like real frames */
-  
-  /* Gold ornate border */
-  border: 18px solid transparent;
-  border-image: linear-gradient(
-    135deg, 
-    #b8860b, #d4af37 25%, #ffd700 50%, #d4af37 75%, #b8860b
-  );
-  border-image-slice: 1;
-
-  /* Beveled / embossed effect */
-  box-shadow: 
-    0 4px 10px rgba(0,0,0,0.4), /* outer shadow for depth */
-    inset 2px 2px 6px rgba(255,255,255,0.6), /* highlight */
-    inset -2px -2px 6px rgba(0,0,0,0.4); /* shading inside */
 
   /* Add subtle texture (looks like carving) */
   background-clip: padding-box;
