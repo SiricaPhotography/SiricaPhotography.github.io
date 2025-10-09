@@ -63,7 +63,7 @@ body {
   min-width: 250px;
 }
 
-/* Ornate Gold Frame */
+/* Ornate Gold Frame 
 .frame {
   width: 100%;
   max-width: 300px;
@@ -80,6 +80,36 @@ body {
     inset 3px 3px 6px rgba(255,255,255,0.6),
     inset -3px -3px 6px rgba(0,0,0,0.4);
   border-radius: 6px;
+}
+*/
+
+.photo-frame {
+position:relative;
+margin: 4vw 9vw 9vw 4vw;
+}
+
+.photo-frame img.frame-image {
+position:absolute;
+width:35vw;
+}
+
+.photo-frame img.photo {
+max-width:30vw;
+max-height:35vw;
+margin-top:6vw;
+margin-left:6vw;
+}
+
+section.welcome {
+display:flex;
+max-width:84vw;
+margin:auto;
+}
+
+section.welcome h2 {
+text-align:center;
+margin-top: 10vw;
+Height:10vw;
 }
 
 .text-box {
