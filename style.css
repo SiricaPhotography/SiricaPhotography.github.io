@@ -88,9 +88,18 @@ position:relative;
 margin: 4vw 9vw 9vw 4vw;
 }
 
+.photo-frame.about {
+  margin: 4vw auto;
+  width: 40vw;
+}
+
 .photo-frame img.frame-image {
 position:absolute;
 width:35vw;
+}
+
+.photo-frame.about img.frame-image {
+width: 40vw;
 }
 
 .photo-frame img.photo {
@@ -98,6 +107,10 @@ max-width:30vw;
 max-height:35vw;
 margin-top:6vw;
 margin-left:6vw;
+}
+
+.photo-frame.about img.photo {
+  max-height: 40vw;
 }
 
 section.welcome {
