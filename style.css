@@ -112,6 +112,11 @@ margin-left:6vw;
 .photo-frame.about img.photo {
   max-height: 40vw;
 }
+.photo-frame.about {
+ margin: 4vw auto;
+ width: 40vw;
+padding-bottom: 5vw;
+}
 
 section.welcome {
 display:flex;
