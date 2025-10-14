@@ -109,13 +109,14 @@ margin-top:6vw;
 margin-left:6vw;
 }
 
-.photo-frame.about img.photo {
-  max-height: 40vw;
-}
 .photo-frame.about {
  margin: 4vw auto;
  width: 40vw;
 padding-bottom: 10vw;
+}
+
+.photo-frame.about img.photo {
+  max-height: 40vw;
 }
 
 section.welcome {
