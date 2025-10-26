@@ -171,36 +171,6 @@ Height:10vw;
   gap: 40px;
 }
 
-/* Footer */
-.footer {
-  background-color: #3c4048;
-  color: white;
-  text-align: center;
-  padding: 30px 0;
-  font-family: "Georgia", serif;
-}
-
-.footer .contact p {
-  margin: 4px 0;
-  font-size: 15px;
-}
-
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons img {
-  width: 40px;
-  height: 40px;
-  margin: 0 8px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.1);
-}
-
 /* FOOTER */
 .footer {
   background: #4a4f58;
