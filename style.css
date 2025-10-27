@@ -166,28 +166,29 @@ Height:10vw;
 
 /* --- Portfolio Layout --- */
 .portfolio {
-  display: flex;
-  justify-content: center;
-  gap: 50px; /* space between columns */
-  padding: 60px 0;
-  max-width: 1200px;
+  display: flex;                 /* Makes columns sit next to each other */
+  justify-content: center;       /* Centers all columns on the page */
+  align-items: flex-start;
+  gap: 50px;                     /* Space between columns */
+  padding: 60px 40px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 /* Each Column */
 .column {
   display: flex;
-  flex-direction: column;
-  gap: 40px; /* space between images in a column */
+  flex-direction: column;        /* Stack images vertically in each column */
+  gap: 40px;                     /* Space between images in a column */
   align-items: center;
 }
 
-/* Images (no extra padding/borders) */
+/* Image Styling */
 .column img {
-  width: 320px;
+  width: 320px;                  /* Consistent width for each image */
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2); /* subtle drop shadow */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -195,6 +196,7 @@ Height:10vw;
   transform: scale(1.03);
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
+
 
 .contact-box {
   flex: 1;
