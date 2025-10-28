@@ -192,3 +192,35 @@ Height:10vw;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* FOOTER */
+.footer {
+  background: #4a4f58;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  flex: 1;
+}
+
+.social-box {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.social-box img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+.social-box img:hover {
+  transform: scale(1.1);
+}
