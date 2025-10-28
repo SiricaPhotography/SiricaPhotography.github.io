@@ -197,13 +197,16 @@ Height:10vw;
   transform: scale(1.03);
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
+.main-content {
+  flex: 1;
+}
 
-/* Contact Section Styling */
+/* Footer (Contact Section) */
 .contact-section {
-  background-color: #3c3f4a; 
-  color: #f5f5f5; 
+  background-color: #3c3f4a; /* dark gray from your footer */
+  color: #f5f5f5;
   text-align: center;
-  padding: 60px 0 40px 0; 
+  padding: 60px 0 40px; /* top padding creates space from the section above */
   font-family: 'Georgia', serif;
   font-size: 16px;
 }
