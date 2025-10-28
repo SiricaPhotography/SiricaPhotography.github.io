@@ -47,16 +47,6 @@ body {
   color: #ffd700;
 }
 
-/* WELCOME SECTION */
-.welcome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 3rem 2rem;
-  flex-wrap: wrap;
-}
-
 .image-box {
   flex: 1;
   text-align: center;
