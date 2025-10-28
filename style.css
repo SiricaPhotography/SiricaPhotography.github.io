@@ -165,35 +165,40 @@ Height:10vw;
   padding: 0;
 }
 
-/* --- Portfolio Layout --- */
+/* Portfolio Layout */
 .portfolio {
-  display: flex;                 /* Makes columns sit next to each other */
-  justify-content: center;       /* Centers all columns on the page */
+  display: flex;
+  justify-content: center;
   align-items: flex-start;
-  gap: 50px;                     /* Space between columns */
-  padding: 60px 40px;
-  max-width: 1400px;
-  margin: 0 auto;
+  gap: 100px; /* larger space between columns */
+  padding: 100px 0; /* top and bottom spacing */
+  background-color: #e4ebf0; /* neutral background */
 }
 
-/* Each Column */
+/* Column Layout */
 .column {
   display: flex;
-  flex-direction: column;        
-  gap: 40px;                     
-  align-items: center;
+  flex-direction: column;
+  gap: 60px; /* vertical space between images */
 }
 
 /* Image Styling */
 .column img {
-  width: 320px;                 
+  width: 450px; /* slightly wider for MacBook Pro screen */
   height: auto;
-  border-radius: 4px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  display: block;
+  border-radius: 10px; /* soft corners */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* subtle depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover Effect */
 .column img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
 }
