@@ -158,8 +158,8 @@ Height:10vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 100px; /* larger space between columns */
-  padding: 100px 0; /* top and bottom spacing */
+  gap: 3vw; 
+  padding: 100px 0; 
   background-color: #e4ebf0; /* neutral background */
 }
 
@@ -179,6 +179,7 @@ Height:10vw;
   border-radius: 10px; /* soft corners */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* subtle depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 6vw;
 }
 
 /* Hover Effect */
