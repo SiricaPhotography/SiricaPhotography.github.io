@@ -18,7 +18,7 @@ body {
   padding: 1rem;
 }
 
-.logo-box img {
+.logo img {
   max-width: 350px;
   height: auto;
   display: block;
@@ -48,7 +48,7 @@ body {
 }
 
 /* WELCOME SECTION */
-.welcome-box {
+.welcome {
   display: flex;
   justify-content: center;
   align-items: center;
