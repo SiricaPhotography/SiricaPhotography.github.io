@@ -163,15 +163,16 @@ Height:10vw;
   background-color: #e4ebf0; /* neutral background */
 }
 
-/* Column Layout */
+/* Column Layout 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 60px; /* vertical space between images */
+  gap: 60px; 
 }
+*/
 
 /* Image Styling */
-.column img {
+.portfolio img {
   width: 450px; /* slightly wider for MacBook Pro screen */
   height: auto;
   display: block;
