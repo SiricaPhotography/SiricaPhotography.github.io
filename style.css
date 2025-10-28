@@ -181,7 +181,7 @@ Height:10vw;
 }
 
 /* Hover Effect */
-.column img:hover {
+.portfolio img:hover {
   transform: scale(1.04);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
