@@ -179,14 +179,14 @@ Height:10vw;
 /* Each Column */
 .column {
   display: flex;
-  flex-direction: column;        /* Stack images vertically in each column */
-  gap: 40px;                     /* Space between images in a column */
+  flex-direction: column;        
+  gap: 40px;                     
   align-items: center;
 }
 
 /* Image Styling */
 .column img {
-  width: 320px;                  /* Consistent width for each image */
+  width: 320px;                 
   height: auto;
   border-radius: 4px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -198,9 +198,25 @@ Height:10vw;
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
+/* Contact Section Styling */
+.contact-section {
+  background-color: #3c3f4a; 
+  color: #f5f5f5; 
+  text-align: center;
+  padding: 60px 0 40px 0; 
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+}
 
-.contact-box {
-  flex: 1;
-  background: #4a4f58;
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.contact-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
